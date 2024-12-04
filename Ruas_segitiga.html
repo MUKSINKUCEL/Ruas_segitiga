@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  
+<title>ruas segitiga </title>
+<body>
+  <h1>menghitung luar segituga</h1>
+ 
+  <table for="">alas segitiga </table><br>
+  <input type="number" id="alas"><br>
+  
+  <table for="">tinggi segitiga</table><br>
+  <input type="number" id="tiggi"><br>
+ 
+  <button id="hitung">hitung</button>
+  <div id="output"></div>
+  <script>
+    const alas = document.getElementById('alas')
+    const tiggi = document.getElementById('tinggi')
+    const hitung = document.getElementById('hitung')
+    const output = document.getElementById('output')
+  hitung.addEventListener('click', function(){
+    let a = alas.value
+    let t = tinggi.value
+    let l = 0.5*a*t
+      output.innerHTML=`luas segitiga dari alas $(a) cm dan tinggi $(t) cm adalah $(l) cm2`})
+  </script>
+</body>
+</html>
